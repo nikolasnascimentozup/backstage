@@ -1,0 +1,77 @@
+/*
+ * Copyright 2020 Spotify AB
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import React, { FC } from 'react';
+import { Typography } from '@material-ui/core';
+import { Content, InfoCard, Page, pageTheme} from '@backstage/core';
+import {
+  makeStyles,
+
+  TextField
+} from '@material-ui/core';
+
+/*
+ * import { Content, InfoCard, Header, Page , pageTheme} from '@backstage/core';
+ * import Table from '@material-ui/core/Table';
+ * import TableBody from '@material-ui/core/TableBody';
+ * import TableCell from '@material-ui/core/TableCell';
+ * import TableContainer from '@material-ui/core/TableContainer';
+ * import TableHead from '@material-ui/core/TableHead';
+ * import TableRow from '@material-ui/core/TableRow';
+*/
+
+const useStyles = makeStyles(theme => ({
+  input: {
+    minWidth: 300,
+  },
+  buttonList: {
+    marginLeft: theme.spacing(-1),
+    marginRight: theme.spacing(-1),
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
+
+
+const Publicpages: FC<{}> = () => {
+  const classes = useStyles();
+  return (
+    <Page theme={pageTheme.tool}>
+
+      <Content>
+        <Typography variant="h3">Enter the URLs</Typography>
+        <InfoCard>
+            <body>
+            <TextField
+                                  name="teste"
+                                  className={classes.input}
+                                  label="URL"
+                                  placeholder="Url Name,http://"
+                                  helperText="URL to test."
+
+
+                                />
+
+            </body>
+
+        </InfoCard>
+      </Content>
+    </Page>
+  );
+};
+
+export default Publicpages;

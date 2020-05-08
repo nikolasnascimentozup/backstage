@@ -23,3 +23,4 @@ export { plugin as Explore } from '@backstage/plugin-explore';
 export { plugin as Teste } from '@backstage/plugin-teste';
 export { plugin as Omnichannel } from '@backstage/plugin-omnichannel';
 export { plugin as Nikolas } from '@backstage/plugin-nikolas';
+export { plugin as Nodeurl } from '@backstage/plugin-nodeurl';

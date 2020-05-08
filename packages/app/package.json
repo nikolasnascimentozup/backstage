@@ -25,6 +25,7 @@
     "@backstage/plugin-inventory": "^0.1.1-alpha.4",
     "@backstage/plugin-lighthouse": "^0.1.1-alpha.4",
     "@backstage/plugin-nikolas": "^0.1.1-alpha.4",
+    "@backstage/plugin-nodeurl": "^0.1.1-alpha.4",
     "@backstage/plugin-omnichannel": "^0.1.1-alpha.4",
     "@backstage/plugin-scaffolder": "^0.1.1-alpha.4",
     "@backstage/plugin-tech-radar": "^0.1.1-alpha.4",
